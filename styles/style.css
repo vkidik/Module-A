@@ -1,0 +1,327 @@
+:root {
+  --font-size: 1.3em;
+  --font-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #ffffff;
+}
+@font-face {
+  font-family: Montserrat-Italic-VariableFont_wght;
+  src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Montserrat-VariableFont_wght;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: NotoSans-Black;
+  src: url(../fonts/Noto_Sans/NotoSans-Black.ttf);
+}
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(../fonts/Noto_Sans/NotoSans-Bold.ttf);
+}
+@font-face {
+  font-family: NotoSans-Medium;
+  src: url(../fonts/Noto_Sans/NotoSans-Medium.ttf);
+}
+@font-face {
+  font-family: NotoSans-MediumItalic;
+  src: url(../fonts/Noto_Sans/NotoSans-MediumItalic.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Bold;
+  src: url(../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
+body {
+  background-color: rgb(28, 27, 23);
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  color: #737373;
+}
+body::-webkit-scrollbar-thumb {
+  color: #38362e;
+}
+.section_first_display {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 99.8vh;
+  justify-content: center;
+  align-content: space-between;
+  border-bottom: 2px solid #161616;
+}
+.section_first_display .main_background img {
+  height: 14vh;
+  width: 9vw;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+.navigation ul li {
+  margin: 3vw;
+}
+.navigation ul li a {
+  font-family: Ubuntu-Bold;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: var(--font-size);
+}
+.navigation ul li a:hover {
+  border-bottom: 3px solid#ffffff;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.ok {
+  width: 70px;
+}
+#first {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+#second {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -65vh;
+  margin-left: -17vw;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+}
+.first_display_title {
+  color: var(--font-color);
+  font-family: Ubuntu-Bold;
+  font-size: 5em;
+}
+.system_icons {
+  margin-bottom: 5vh;
+}
+.system_icon {
+  width: 75px;
+  height: 75px;
+}
+.to_shop {
+  margin-top: 6vh;
+}
+.to_shop a {
+  color: var(--font-color);
+  font-size: calc(var(--font-size) * 2);
+  font-family: Ubuntu-Bold;
+  margin-left: 0, 9vw;
+  border-bottom: 2px solid var(--font-color);
+}
+.social_media {
+  margin-top: 8vh;
+}
+.models_title {
+  text-align: center;
+  font-size: 3.5em;
+  font-family: NotoSans-Bold;
+  margin-top: 6vh;
+}
+.models_subtitle {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Montserrat-VariableFont_wght;
+  margin: 7vh 3vw;
+}
+.models {
+  display: flex;
+  margin-top: 7vh;
+}
+.model {
+  border: 5px solid var(--font-color);
+  border-radius: 20px;
+  width: 30vw;
+  height: auto;
+  background-color: #38362e;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 2vw;
+  font-size: 1.2em;
+  font-family: Ubuntu-Bold;
+}
+.model:last-child {
+  margin-right: 2vw;
+}
+.model img:first-child {
+  height: 30vh;
+  width: 27vw;
+  border: 2px solid var(--font-color);
+  border-radius: 10px;
+}
+.model > :nth-child(1) {
+  margin-top: 2vh;
+}
+.model > :nth-child(2) {
+  margin-top: 2vh;
+}
+.model > :nth-child(3) {
+  margin-top: 2vh;
+}
+.model > :nth-child(4) {
+  margin-top: 2vh;
+}
+.model > :nth-child(5) {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.about_models ul {
+  list-style-type: none;
+}
+#section_room_factory {
+  margin-top: 6vh;
+  background-image: url(../images/sportivnyj-velosiped-priparkovali-k-derevu.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.room_factory_background img {
+  margin: 0 3vw;
+  border-radius: 7px;
+}
+#section_room_factory h2 {
+  color: #38362e;
+  font-size: 2.5em;
+  font-family: Ubuntu-Bold;
+}
+#section_room_factory span {
+  color: #38362e;
+  font-size: 1.9em;
+  font-family: Montserrat-VariableFont_wght;
+}
+.tools_title {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: NotoSans-Bold;
+  margin-top: 6vh;
+}
+.tools_subtitle {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: Montserrat-VariableFont_wght;
+  margin: 7vh 3vw;
+}
+.tools {
+  display: flex;
+  margin-top: 6vh;
+}
+.tool {
+  background-color: var(--font-color);
+  border: 10px solid #38362e;
+  margin: 5vh;
+  border-radius: 20px;
+  height: 50vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Ubuntu-Bold;
+}
+.tool:hover {
+  transform: scale(1.05);
+}
+.tool_title {
+  text-align: center;
+}
+.tool_title h3 {
+  color: #38362e;
+}
+.about_tool ul li {
+  color: #38362e;
+  list-style-type: none;
+  margin-top: 1vh;
+}
+.tool span {
+  color: #38362e;
+}
+.invite_club_title {
+  text-align: center;
+}
+.invite_club_title span {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: NotoSans-Bold;
+  margin-top: 6vh;
+}
+.invite_club_subtitle {
+  text-align: center;
+}
+.invite_club_subtitle span {
+  text-align: center;
+  font-size: 2em;
+  font-family: Montserrat-VariableFont_wght;
+  margin: 10vh 3vw;
+}
+.name_inputs {
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+.name_inputs input {
+  width: 15vw;
+  height: 4vh;
+  background-color: #737373;
+  border: 5px solid #38362e;
+  border-radius: 10px;
+  color: #38362e;
+  margin-left: 5vw;
+}
+.name_inputs input::placeholder {
+  color: #38362e;
+  font-size: 1.1em;
+  font-family: Ubuntu-Bold;
+}
+.invite_club_form {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#submite {
+  margin-top: 5vh;
+  width: 12vw;
+  height: 5vh;
+  background-color: #161616;
+  color: #ffffff;
+  border: 5px solid #38362e;
+  border-radius: 10px;
+}
+footer {
+  margin-top: 6vh;
+  display: flex;
+  background-color: #504d42;
+}
